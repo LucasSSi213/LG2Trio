@@ -1,0 +1,45 @@
+public  class  OrdenacaoRapida {
+
+    // CLASSIFICAÇÃO DE CASCA ********
+
+    public  static  int [] shellSort ( int  v []) {
+        int  n = v . comprimento ;
+
+        for ( int  j = n / 2 ; j > 0 ; j /= 2 ) {
+            for ( int  i = j ; i < n ; i ++) {
+                int  chave = v [ i ];
+                int  x = i ;
+                while ( x >= j && v [ x - j ] > tecla ) {
+                    v [ x ] = v [ x - j ];
+                    x -= j ;
+                }
+                v [ x ] = chave ;
+            }
+        }
+        retornar  v ;
+    }
+
+    //MERGE SORT ********
+
+    public  static  int [] mergeSort ( int [] v ) {        
+        int  elementos = 1 ;        
+        int  inicio , meio , fim ;
+
+
+        while ( elementos < v . comprimento ) …
+[20:39, 02/12/2022] Alicia: .
+[20:39, 02/12/2022] Alicia: importar  java . . _ aleatório ;
+ classe  pública Vetor {
+
+    public  static  int [] fazerVetor ( int  espacos , int  semente ){
+
+        int  vetor [] = new  int [ espaços ];
+        Random  gerador = new  Random ( semente );
+        for ( int  i = 0 ; i < espacos ; i ++){            
+            int  x = gerador . nextInt ( 100000 );
+            vetor [ i ] = x ;            
+        }
+        Sistema . fora . println ( "Vetor feito" );
+         vetor de retorno ;
+    }
+}
