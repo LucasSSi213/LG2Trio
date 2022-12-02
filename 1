@@ -1,0 +1,95 @@
+import javax . balanço . JOptionPane ;
+ aplicativo de classe  pública {
+    public  static  void  main ( String [] args ){
+
+        String [] opcoesTamanho = { "10.000" , "30.000" , "90.000" , "270.000" , "810.000" , "2.430.000" , "65.610.000" };
+        int  escolhaTamanho = JOptionPane . showOptionDialog ( null , "Qual o tamanho do array?" , "Escolha um botão." , JOptionPane . DEFAULT_OPTION , JOptionPane . INFORMAÇÕES_MESSAGE , null , opcoesTamanho , opcoesTamanho [ 0 ]);
+        SizeArray  = 0 ; _
+        escolhaTamanho += 1 ;
+        switch ( escolha Tamanho ) {
+            caso  1 :
+            tamanhoArray = 10000 ;
+            quebrar ;
+            caso  2 :
+            tamanhoArray = 30000 ;
+            quebrar ;
+            caso  3 :
+            tamanhoArray = 90000 ;
+            quebrar ;
+            caso  4 :
+            tamanhoArray = 270000 ;
+            quebrar ;
+            caso  5 :
+            tamanhoArray = 810000 ;
+            quebrar ;
+            caso  6 :
+            tamanhoArray = 2430000 ;
+            quebrar ;
+            caso  7 :
+            tamanhoArray = 65610000 ;
+            quebrar ;
+        }
+
+        String [] opcoesSemente = { "13" , "21" , "34" , "55" , "89" , "144" };
+        int  escolhaSemente = JOptionPane . showOptionDialog ( null , "Qual semente para criação do array?" , "Escolha um botão." , JOptionPane . DEFAULT_OPTION , JOptionPane . INFORMATION_MESSAGE , null , opcoesSemente , opcoesSemente [ 0 ]);
+       int  semente = 0 ;
+       escolhaSemente += 1 ;
+        switch ( escolhaSemente ) {
+            caso  1 :
+            semente = 13 ;            
+            quebrar ;
+            caso  2 :
+            semente = 21 ;           
+            quebrar ;
+            caso  3 :
+            semente = 34 ;
+            quebrar ;
+            caso  4 :
+            semente = 55 ;
+            quebrar ;
+            caso  5 :
+            semente = 89 ;
+            quebrar ;
+            caso  6 :
+            semente = 144 ;
+            quebrar ;            
+        }
+        int  vetor [] = Vetor . fazerVetor ( tamanhoArray , semente );
+
+        String [] opcoesSort = { "BubleSort" , "SelectionSort" , "InsertionSort" , "ShellSort" , "MergeSort" , "QuickSort" };
+        int  escolhaSort = JOptionPane . showOptionDialog ( null , "Como você quer organizar este array?" , "Escolha um botão." , JOptionPane . DEFAULT_OPTION , JOptionPane . INFORMATION_MESSAGE , null , opcoesSort , opcoesSort [ 0 ]);
+        escolhaSort += 1 ;
+
+        longo  tempoInicial = System . currentTimeMillis ();
+
+        alternar ( escolher Ordenar ){
+            caso  1 : vetor = OrdenacaoLenta . bubleSort ( vetor );            
+            caso  2 : vetor = OrdenacaoLenta . seleçãoSort ( vetor );             
+            caso  3 : vetor = OrdenacaoLenta . insertSort ( vetor ); quebrar ;
+            caso  4 : vetor = OrdenacaoRapida . shellSort ( vetor ); quebrar ;
+            caso  5 : vetor = OrdenacaoRapida . mergeSort ( vetor ); quebrar ;
+            caso  6 : vetor = OrdenacaoRapida . quickSort ( vetor ); quebrar ;
+        }    
+
+         andamento longo = System . currentTimeMillis () - tempoInicial ;
+
+
+
+
+
+
+        Sistema . fora . println ( "O programa ordenado em " + tempo + " milissegundos" );
+
+
+       int  escolhaExibir = JOptionPane . showConfirmDialog ( null , "Você quer exibir o vetor ordenado?" );
+        if ( escolhaExibir == 0 ){       
+            for ( int  i = 0 ; i <= vetor . length - 1 ; i ++)
+            {
+           Sistem . out . println( vetor [ i ]);
+        }
+    }
+    else
+    Sistem . out . println ( "Programa finalizado" );
+
+    }
+}
