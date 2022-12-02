@@ -1,0 +1,61 @@
+public  class  OrdenaçãoLenta {
+
+   // BLUBLE SORT ***********
+
+        public  static  int [] bubleSort ( int [] v )
+        {
+
+          for ( int  i = 0 ; i < v . length - 1 ; i ++)
+           {
+            for ( int  j = 0 ; j < v . length - 1 - i ; j ++)
+             {
+              se ( v [ j ] > v [ j + 1 ]) {
+                int  aux = v [ j ];
+                v [ j ] = v [ j + 1 ];
+                v [ j + 1 ] = aux ;
+              }
+            }
+          }
+          retornar  v ;
+        }
+
+//SELEÇÃO DE CLASSIFICAÇÃO*********
+
+        public  static  int [] selectionSort ( int [] v ){  
+          for ( int  i = 0 ; i < v . length - 1 ; i ++)  
+          {  
+              int  comparado = i ;  
+              for ( int  j = i + 1 ; j < v . comprimento ; j ++){  
+                  if ( v [ j ] < v [ comparado ]){  
+                      comparado = j ;
+                  }  
+              }  
+              int  menorNumero = v [ comparado ];   
+              v [ comparado ] = v [ i ];  
+              v [ i ] = menorNumero ;  
+          }
+          retornar  v ;  
+      }
+
+//INSERÇÃO DE CLASSIFICAÇÃO*************
+
+      public  static  int [] insertionSort ( int  v [])
+      {
+          int  n = v . comprimento ;
+          for ( int  i = 1 ; i < n ; ++ i ) {
+              int  chave = v [ i ];
+              int  j = i - 1 ;
+
+              while ( j >= 0 && v [ j ] > tecla ) {
+                  v [ j + 1 ] = v [ j ];
+                  j = j - 1 ;
+              }
+              v [ j + 1 ] = chave ;
+          }
+          retornar  v ;
+      }
+
+
+
+
+      }
